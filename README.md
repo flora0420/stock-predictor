@@ -1,5 +1,8 @@
 # Stock Prophet
 
+status: developed in 2022. Prophet is hard to be containerized. Consider depreciation. 
+
+
 A demo for stock prophet deployment and hosting with FastAPI and AWS EC2
 
 ## Usage
