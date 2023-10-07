@@ -18,11 +18,11 @@ http://localhost:8000/predict
 1. conda env    
 
     ```
-    conda create --name stocker-neuralprophet python=3.10
-    conda activate stocker-neuralprophet
+    conda create --name stock-neuralprophet python=3.10
+    conda activate stock-neuralprophet
     pip install -r requirements.txt
     ```
-    
+
 1. uvicorn 
     ```
     cd app
