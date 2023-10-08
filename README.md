@@ -1,6 +1,19 @@
+---
+title: StockPredictor
+emoji: 🌍
+colorFrom: red
+colorTo: green
+sdk: docker
+pinned: false
+license: mit
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+
 # Stock Prophet
 
-A demo for stock prophet deployment and hosting with FastAPI and AWS EC2
+A demo for stock prophet deployment on huggingface spaces
 
 ## Usage
 ```
