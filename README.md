@@ -60,3 +60,8 @@ and copy the content to Settings > SSH and GPG keys > Add SSH key
 ssh -T git@hf.co
 ```
 and make sure the message reads `Hi hf_username, welcome to Hugging Face.`
+
+- Clone the repo from a space:
+```
+git clone git@hf.co:spaces/<username>/<repo>
+```
