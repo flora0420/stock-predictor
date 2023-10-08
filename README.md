@@ -40,7 +40,7 @@ Assume that you've already set up your ssh key and added it to your github accou
 
 At this point, you shall have a HuggingFace account.
 
-You shall already have a ssh keypair, say `id_25519` and `id_25519.pub` in `~/.ssh`. If not, you can generate one by `ssh-keygen -t ed25519 -C "your.email@example.co"
+You shall already have a ssh keypair, say `id_25519` and `id_25519.pub` in `~/.ssh`. If not, you can generate one by `ssh-keygen -t ed25519 -C "your.email@example.co"`
 
 Add it to your SSH agent with ssh-add ( [ref](https://huggingface.co/docs/hub/security-git-ssh) ): 
 ```
