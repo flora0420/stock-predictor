@@ -17,13 +17,13 @@ A demo for stock prophet deployment on huggingface spaces
 
 ## Usage
 ```
-curl localhost:8000/ping
+curl https://coorbital-tester.hf.space/ping
 
 curl \
 --header "Content-Type: application/json" \
 --request POST \
 --data '{"ticker":"MSFT", "days":7}' \
-http://localhost:8000/predict
+https://coorbital-tester.hf.space/predict
 ```
 
 ## docker setup 
