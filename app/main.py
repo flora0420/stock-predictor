@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 from model import convert, predict
 
-app = FastAPI()
+app = FastAPI(title='Stock Prediction API', version='0.1', docs_url='/')
 
 # pydantic models
 class StockIn(BaseModel):
