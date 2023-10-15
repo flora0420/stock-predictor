@@ -13,6 +13,14 @@ curl \
 http://localhost:8000/predict
 ```
 
+```
+curl -X 'POST' \
+  'http://127.0.0.1:8000/predict' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{"ticker": "AAPL", "days": 7}'
+```
+
 
 ## local setup
 1. conda env    
@@ -26,13 +34,13 @@ http://localhost:8000/predict
 1. uvicorn 
     ```
     cd app
-    uvicorn  main:app --workers 1 --host 0.0.0.0 --port 8000
+    uvicorn  main:app --reload --host 0.0.0.0 --port 8000
     ```
     if not working: fnd the path of uvicorn and add it to the path
     ```
     conda env list 
 
-    ~/miniforge3/envs/stocker-neuralprophet/bin/uvicorn main:app --workers 1 --host 0.0.0.0 --port 8000
+    ~/miniforge3/envs/stocker-neuralprophet/bin/uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
     ```
 1. process
