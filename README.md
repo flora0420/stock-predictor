@@ -14,10 +14,14 @@ http://localhost:8000/predict
 ```
 
 ## docker setup 
-docker run -d --rm --name mycontainer -p 8000:8000 stock-prophet
+docker run -d --rm --name mycontainer -p 8000:8000 stock-predictor
 ```
 docker images # docker rmi or docker image prune
-docker build -t stock-neuralprophet .
-docker run -p 8000:8000 stock-neuralprophet  # one can see the log
-docker run -d --rm --name mycontainer -p 8000:8000 stock-neuralprophet   # behind the scene
+docker build -t stock-predictor .
+docker run -p 8000:8000 stock-predictor  # one can see the log
+docker run -d --rm --name mycontainer -p 8000:8000 stock-predictor   # behind the scene
+docker stop mycontainer 
+
+docker ps -a # docker rm or docker container prune
+
 ```
