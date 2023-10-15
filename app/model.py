@@ -104,11 +104,11 @@ def predict(ticker="MSFT", days=7):
     return forecast.tail(days).to_dict("records")
 
 
-def convert(predictions) -> dict:
-    """AI is creating summary for convert
+def convert(predictions:dict) -> dict:
+    """process the predictions to a dict of date and predicted price
 
     Args:
-        predictions ([type]): [description]
+        predictions (dict): [description]
         
     Returns:
         dict: [description]
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     parser.add_argument('--days', type=int, default=7, help='Number of days to predict')
     args = parser.parse_args()
     
-    prediction_list = predict(ticker=args.ticker.upper(), days=args.days)
-    output = convert(prediction_list)
+    predictions = predict(ticker=args.ticker.upper(), days=args.days)
+    output = convert(predictions)
     print(output)
     

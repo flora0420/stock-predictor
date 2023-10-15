@@ -18,18 +18,18 @@ class StockOut(StockIn):
 async def pong():
     return {"ping": "pong!"}
 
-@app.post("/predict", response_model=StockOut, status_code=200)
+@app.post("/predict")
 def get_prediction(payload: StockIn):
     ticker = payload.ticker
     days = payload.days
 
-    prediction_list = predict(ticker, days)
+    predictions = predict(ticker, days)
 
-    if not prediction_list:
+    if not predictions:
         raise HTTPException(status_code=400, detail="Model not found.")
 
     response_object = {
         "ticker": ticker, 
         "days": days,
-        "forecast": convert(prediction_list)}
+        "forecast": convert(predictions)}
     return response_object
