@@ -7,6 +7,8 @@ RUN apt-get -y update  && apt-get install -y \
 
 # Set the working directory to the user's home directory
 WORKDIR /app
+### Update permissions for the app
+RUN chmod -R a+w .
 
 RUN pip install --no-cache-dir -U pip
 
