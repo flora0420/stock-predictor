@@ -35,3 +35,13 @@ http://localhost:8000/predict
     ~/miniforge3/envs/stocker-neuralprophet/bin/uvicorn main:app --workers 1 --host 0.0.0.0 --port 8000
 
     ```
+1. process
+
+This will check processes using port :8000. If you are using different port for fastAPI then change the port number.
+```
+lsof -i :8000
+```
+If you want to kill the process using port :8000
+```
+kill -9 <PID>
+```
