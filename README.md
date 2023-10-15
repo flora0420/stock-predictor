@@ -1,6 +1,16 @@
-# Stock Prophet
+# Stock Predictor
 
-A demo for stock prophet deployment and hosting with FastAPI and AWS EC2
+## Chat with Cursor
+### Command L to chat
+1. Chat: how to build a docker image
+2. chat: how to run a container
+1. chat: uploda model.py, i changed the code in model.py, do i need to rebuild the image?
+3. chat: upload a @Dockerfile  explain  how the WORKDIR and COPY works
+
+### Command K to generate
+1. add title to fastapi
+2. optimize the code
+1. improve typehints & documentation
 
 ## Usage
 ```
