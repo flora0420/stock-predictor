@@ -21,13 +21,12 @@ curl -X 'POST' \
   -d '{"ticker": "AAPL", "days": 7}'
 ```
 
-
 ## local setup
 1. conda env    
 
     ```
-    conda create --name stock-neuralprophet python=3.10
-    conda activate stock-neuralprophet
+    conda create --name stock-predictor-fastapi python=3.10 -y
+    conda activate stock-predictor-fastapi
     pip install -r requirements.txt
     ```
 
@@ -40,7 +39,7 @@ curl -X 'POST' \
     ```
     conda env list 
 
-    ~/miniforge3/envs/stocker-neuralprophet/bin/uvicorn main:app --reload --host 0.0.0.0 --port 8000
+    ~/miniforge3/envs/stocker-predictor-fastapi/bin/uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
     ```
 1. process
